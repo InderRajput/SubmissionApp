@@ -1,0 +1,53 @@
+<%= form_for(@submission) do |f| %>
+
+    <div class="form-group">
+      <%= f.text_field :name, placeholder: "Full Name", class: 'form-control'%>
+      <span class="help-block"></span>
+    </div>
+
+    <div class="form-group">
+      <%= f.text_field :skill, placeholder: "Job Title", class: 'form-control'%>
+      <span class="help-block"></span>
+    </div>
+
+    <div class="form-group">
+      <%= f.text_field :email, placeholder: "Email id", class: 'form-control' %>
+      <span class="help-block"></span>
+    </div>
+
+    <div class="form-group">
+      <%= f.text_field :phone, placeholder: "Phone No.", class: 'form-control' %>
+      <span class="help-block"></span>
+    </div>
+
+    <div class="form-group">
+      <%= f.text_field :location, placeholder: "Current Location" , class: 'form-control' %>
+      <span class="help-block"></span>
+    </div>
+
+    <div class="form-group">
+      <%= f.text_field :visa, placeholder: "Visa Status", class: 'form-control' %>
+      <span class="help-block"></span>
+    </div>
+
+    <div class="form-group">
+      <%= f.text_field :rate, placeholder: "Rate or Annual Salary", class: 'form-control' %>
+      <span class="help-block"></span>
+    </div>
+
+    <div class="form-group">
+      <%= f.text_field :availability, placeholder: "Availability ", class: 'form-control' %>
+      <span class="help-block"></span>
+    </div>
+
+    <div class="form-group">
+      <%= f.text_field :relocation, placeholder: "Willing to Relocate", class: 'form-control' %>
+      <span class="help-block"></span>
+    </div><br><br>
+
+    <%# Added Bootstrap classes %>
+    <div class="actions">
+      <object align="right"><%= f.submit 'Submit', class: "btn btn-success" %></object>
+    </div>
+
+<% end %>
